@@ -1,6 +1,5 @@
 package br.com.caelum.classesIngles;
 
-
 //Creating Constructors
 
 public class workConstructor{

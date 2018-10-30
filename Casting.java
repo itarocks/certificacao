@@ -1,15 +1,16 @@
 package br.com.caelum.classesIngles;
 
 public class Casting{
+ public static Integer testInts(Integer obj, int var){     
+
+     obj = var++;   
+     obj++; 
+     return obj;
+         }
+
 	public static void main(String... args){
 
-
-		int a = 10; 
-		//Abaixo temos uma atribuição dentro de uma atribuição
-		long b = (a = 3);
-
-		System.out.println("O valor de a : " +  a);
-		System.out.println("O valor de b : " +  b);
-
+		boolean b1 = false; boolean b2 = false; if (b2 != b1 = !b2){    System.out.println("true"); } else{    System.out.println("false"); }
+	
 	}
 }

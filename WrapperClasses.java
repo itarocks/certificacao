@@ -4,7 +4,9 @@ import java.util.*;
 public class WrapperClasses{
 
 	public static void main(String... args){
+		//Transforma para primitivo
 		int primitive = Integer.parseInt("123");
+		//Transforma para Wrapper;
 		Integer wrapper = Integer.valueOf("133");
 		//Double d1 = new Double("abc") // throws NumberFormatException
 		List<Double> weigths = new ArrayList<>();
@@ -22,6 +24,28 @@ public class WrapperClasses{
 		//AutoBoxing
 		Integer intWrapperJ5 = Integer.valueOf(3);
 		intWrapperJ5++;
+		//Aqui ele faz o autoboxing
+		Byte a = 10;
+		//Byte b = new Byte(1);
+		Byte b = new Byte((byte)1);
+		//Convertendo String em um primitivo
+		String acb = "1";
+		int bc = Integer.parseInt(acb);
+		System.out.println("O valor de bc e " + bc);
+		Integer teste = 10;
+		int teste2 = 15;
+		int soma = teste + teste2;
+		System.out.println("O valor da soma é " + soma);		
+		//Quando lidar com Wrapper preste atenção
+		List<Integer> listaInteiros = new ArrayList<>();
+		listaInteiros.add(1);
+		listaInteiros.add(2);
+		System.out.println("O conteudo da lista possui " + listaInteiros);
+		//listaInteiros.remove(1); dessa forma remove o registro do indice 1
+		listaInteiros.remove(new Integer(1));
+		System.out.println("O conteudo da lista possui " + listaInteiros);
+
+
 
 	}
 }

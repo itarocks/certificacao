@@ -13,6 +13,7 @@ public class inheritInterfaces implements workInterfaces{
         //a = "Teste";
 		System.out.println("O valor da Constante é " + "" + BAR);
 		System.out.println("O valor da String é  " + "" + a);
+		int _s = 20;
 
 	}
 }

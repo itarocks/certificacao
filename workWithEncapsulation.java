@@ -12,18 +12,11 @@ public class workWithEncapsulation{
 	public static void main(String[] args){
 		//int[5] scores;
 
-int c = 0b01001110_00100000;
-        float z = 3.234_567f; //3
-		workWithEncapsulation a = new workWithEncapsulation();
-		workWithEncapsulation b = new workWithEncapsulation();
-
-		if(!a.equals(b)){
-			System.out.println("They are not equal");
-		}
-		else{
-		   System.out.println("They are equals");	
-		}
-
-		System.out.println("O valor de c" + "" + ch);	
+		int sum = 0;
+      for (int i = 0, j = 10; sum > 20; ++i, --j)      // 1
+      {
+         sum = sum+ i + j;
+      }
+      System.out.println("Sum = " + sum);
 	}
 }

@@ -9,6 +9,8 @@ public class PassDataAmongMethods{
 		this.nome = nome;
 	}
 
+
+
 	public String getNome(){
 
 		return nome;

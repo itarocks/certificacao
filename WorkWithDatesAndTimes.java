@@ -2,6 +2,8 @@ package br.com.caelum.classesIngles;
 
 import java.time.*;
 import java.util.*;
+import java.time.format.DateTimeFormatter;
+
 public class WorkWithDatesAndTimes{
 	public static void main(String... args){
 		// System.out.println(java.time.LocalDate.now());
@@ -32,8 +34,28 @@ public class WorkWithDatesAndTimes{
 		LocalDate e = LocalDate.of(2014,Month.JANUARY,25);
 		System.out.println(e);
 		System.out.println(e1);
-		
-		List s1 = new ArrayList( ); s1.add("a"); s1.add("b"); s1.add("c"); s1.add("a"); if(s1.remove("a")){     if(s1.remove("a")){         s1.remove("b");     }else{         s1.remove("c");     } } System.out.println(s1);
+		//
+		// Data no formato AAAA-MM-DD
+		LocalDate teste = LocalDate.now();
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+		System.out.println("Sem formatação " + " " +  teste);
+		System.out.println("Com formatação " + " " +  teste.format(formatter));
+
+		LocalTime testetempo = LocalTime.now();
+		System.out.println(testetempo);
+		LocalDateTime tempoDia = LocalDateTime.of(teste,testetempo);
+		System.out.println(tempoDia);
+		//Criando datas 
+
+//		LocalDateTime cxc =  new LocalDateTime();
+
+		LocalDate date1 = LocalDate.of(2015,Month.OCTOBER,20);
+		System.out.println(date1);
+		//Lembrar sempre que o mês começa com 1 e nao com zero.
+		LocalDate date2 = LocalDate.of(2015,10,20);
+		System.out.println(date2);
+		//No minimo tem que ter a hora e o minuto
+		System.out.println(LocalTime.of(6,50));
 
 	}
 }

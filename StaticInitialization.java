@@ -1,17 +1,21 @@
 package br.com.caelum.classesIngles;
 
+import java.util.*;
+import java.io.*;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
+//class A implements Runnable{} 
+//class B extends A implements Observer {}
 public class StaticInitialization{
-
-	private static final int NUM_SECONDS; 
-
-	 static{
-	// 	int num60 = 60;
-	// 	int num20 = 20;
-	 	NUM_SECONDS = 10;
-	 }
-	public static void main(String... args){
-
-		//NUM_SECONDS = 10;
-		//NUM_SECONDS = num60 * num20;
+//	public static void novoNumero(int num){
+	public static int novoNumero(int num){
+		num = 8;
+		return num;
 	}
+	public static void main(String... args){
+		int num = 4;
+		num = novoNumero(5);
+		//novoNumero(5);
+		System.out.println("O valor atual do numero é : " + num);
+	}	
 }

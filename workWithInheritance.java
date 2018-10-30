@@ -20,9 +20,7 @@ public class workWithInheritance{
 
 //  	subaru a = new subaru();
 //  	a.exbirMensagem();
-
   	workWithInheritance a = new workWithInheritance();
   	System.out.println("O valor e : " + meuVeiculo.nome);
-
   	  }
 }
